@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/indexCadastro.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <form id="form" autocomplete="off">
+        <h1 id="title">Cadastro</h1>
+        <div>
+            <input placeholder="Nome" required type="text" id="nome" name="nome">
+        </div>
+
+        <div>
+            <input placeholder="CPF" required type="number" id="cpf" name="cpf">
+        </div>
+
+        <div>
+            <input placeholder="Senha" required type="password" id="senha" name="senha">
+        </div>
+        <div>
+            <input placeholder="Confirmar Senha" required type="password" id="confirmarSenha"name="confirmarsenha">
+        </div>
+        <div>
+            <span id="spanErrorSenha">As senhas não são iguais.</span>
+            <span id="spanErrorUser">CPF já cadastrado.</span>
+        </div>
+
+        <button type="submit" id="buttonsubmit">Cadastrar</button>
+        <span id="optionLogin">Já está cadastrado? faça o <a href="./login.html">login</a></span>
+    </form>
+    <div id="containerModal">
+        <div id="content">
+            <button id="closemodal">X</button>
+            <span id="spanCadastro">Usuario cadastrado com sucesso!!</span>
+        </div>
+    </div>
+    <script type="module" src="./js/indexCadastro.js"></script>
+</body>
+
+</html>
