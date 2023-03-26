@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <h1 id="title">login</h1>
+        <div>
+            <input placeholder="CPF" required type="number" id="cpf" name="cpf">
+        </div>
+        <div>
+            <input placeholder="Digite sua senha" required type="text" id="senha" name="senha">
+        </div>
+        <div>
+            <button id="buttonLogin">Entrar</button>
+        </div>
+        <span id="spanCadastro">Não está cadastrado? faça o seu <a href="./cadastro.html">Cadastro</a></span>
+    </form>
 </body>
 </html>
