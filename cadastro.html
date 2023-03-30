@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/indexCadastro.css">
+    <link rel="stylesheet" href="./css/Cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
     <title>Cadastro</title>
 </head>
@@ -18,21 +18,27 @@
         <h1 id="title">Cadastro</h1>
         <div>
             <input placeholder="Nome" required type="text" id="nome" name="nome">
+            <span id="spanErrorNome">O nome deve ter no mínimo três caracteres.</span>
         </div>
-
+        
         <div>
             <input placeholder="CPF" required type="number" id="cpf" name="cpf">
+            <span id="spanErrorTamanhoCPF">o CPF deve ter 11 dígitos.</span>
+            <span id="spanErrorCPF">CPF já cadastrado.</span>
         </div>
-
+        <div>
+            <input placeholder="e-mail" required type="email" id="email" name="email">
+        </div>
+        <div>
+            <input placeholder="dateBirth" required type="date" id="dateBirth" name="dateBirth">
+        </div>
         <div>
             <input placeholder="Senha" required type="password" id="senha" name="senha">
+            <span id="spanErrorSenhaTamanho">A senha deve ter entre 6 e 10 caracteres.</span>
         </div>
         <div>
-            <input placeholder="Confirmar Senha" required type="password" id="confirmarSenha"name="confirmarsenha">
-        </div>
-        <div>
+            <input placeholder="Confirmar Senha" required type="password" id="confirmarSenha" name="confirmarsenha">
             <span id="spanErrorSenha">As senhas não são iguais.</span>
-            <span id="spanErrorUser">CPF já cadastrado.</span>
         </div>
 
         <button type="submit" id="buttonsubmit">Cadastrar</button>
@@ -44,7 +50,7 @@
             <span id="spanCadastro">Usuario cadastrado com sucesso!!</span>
         </div>
     </div>
-    <script type="module" src="./js/indexCadastro.js"></script>
+    <script type="module" src="./js/cadastro.js"></script>
 </body>
 
 </html>

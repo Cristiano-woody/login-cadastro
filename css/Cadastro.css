@@ -26,7 +26,6 @@ form {
 div {
     display: flex;
     flex-direction: column;
-    width: auto;
 }
 input {
     font-size: 16px;
@@ -75,7 +74,31 @@ button:active{
     display: none;
     transition: all .4s;
 }
-#spanErrorUser{
+#spanErrorCPF{
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+    transition: all .4s;
+}
+#spanErrorNome{
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+    transition: all .4s;
+}
+#spanErrorSenhaTamanho{
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+    transition: all .4s;
+}
+#spanErrorTamanhoCPF{
     color: #ff0000;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
