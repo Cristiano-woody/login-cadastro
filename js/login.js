@@ -4,6 +4,7 @@ import FormCadastroOrLogin from "./classForm.js";
 const formlogin = document.getElementById('formlogin');
 const cpfInput = document.getElementById('cpf');
 const senhaInput = document.getElementById('senha');
+const erroCpfLogin = document.getElementById('erroCpfLogin');
 
 //events
 formlogin.addEventListener('submit', event => handleSubmit(event));
@@ -21,9 +22,14 @@ function handleSubmit(event) {
   formValue.cpf = cpfInput.value
   formValue.senha = senhaInput.value
 
- 
-  if(form.login(formValue)){
+  if (!form.itIsRegistered(formValue.cpf)) {
+    return erroCpfLogin.style.display = 'flex';
+  }
+  if (form.login(formValue)) {
     window.location = '../homePage.html'
   }
- 
+  else{
+    document.getElementById('erroSenhaLogin').style.display = 'flex';
+  }
+
 }

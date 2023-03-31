@@ -18,8 +18,7 @@ class FormRegisterOrLogin {
     }
 
     login(formobject) {
-        //verifica se o usuario ja foi cadastrado
-        if (localStorage.hasOwnProperty(formobject.cpf)) {
+        if (formobject) {
             let user = JSON.parse(localStorage.getItem(formobject.cpf));
 
             if (user.senha === formobject.senha) {
@@ -27,11 +26,11 @@ class FormRegisterOrLogin {
                 return true
             }
             else {
-                document.getElementById('erroSenhaLogin').style.display = 'flex'
+                return false
             }
-        } 
-        else {
-            document.getElementById('erroCpfLogin').style.display = 'flex'
+        }
+        else{
+            return console.log('error: object not found.')
         }
 
     }
