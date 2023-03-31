@@ -27,11 +27,11 @@ class FormRegisterOrLogin {
                 return true
             }
             else {
-                return console.log('error: Wrong CPF or Password');
+                document.getElementById('erroSenhaLogin').style.display = 'flex'
             }
         } 
         else {
-            return console.log("Cpf not registered")
+            document.getElementById('erroCpfLogin').style.display = 'flex'
         }
 
     }

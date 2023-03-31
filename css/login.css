@@ -74,3 +74,22 @@ button:active{
     font-size: 15px;
     margin-bottom: 20px;
 }
+
+#erroCpfLogin{
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+    transition: all .4s;
+}
+
+
+#erroSenhaLogin{
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+    transition: all .4s;
+}

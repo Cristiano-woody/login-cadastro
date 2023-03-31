@@ -14,9 +14,11 @@
         <h1 id="title">login</h1>
         <div>
             <input placeholder="CPF" required type="number" id="cpf" name="cpf">
+            <span id="erroCpfLogin">Usuário não cadastrado</span>
         </div>
         <div>
-            <input placeholder="Digite sua senha" required type="text" id="senha" name="senha">
+            <input placeholder="Digite sua senha" required type="password" id="senha" name="senha">
+            <span id="erroSenhaLogin">Senha incorreta</span>
         </div>
         <div>
             <button id="buttonLogin">Entrar</button>
