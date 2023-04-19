@@ -19,7 +19,7 @@ const modal = document.getElementById('containerModal');
 
 function closeModal() {
     modal.style.display = 'none';
-    window.location = '../login.html'
+    window.location = '../index.html'
 }
 
 //eventos

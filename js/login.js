@@ -26,7 +26,7 @@ function handleSubmit(event) {
     return erroCpfLogin.style.display = 'flex';
   }
   if (form.login(formValue)) {
-    window.location = '../homePage.html'
+    window.location = '../home.html'
   }
   else{
     document.getElementById('erroSenhaLogin').style.display = 'flex';
